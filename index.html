@@ -1,43 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<script language=javascript>
-function sum(a,b)
-{ 
-  var n;
-   n=parseInt(a)+parseInt(b);
-   document.write("<h1>The addition is</h1>  "+n)
+<html>
+    <head>
+        <title>
+            plugins browser
+        </title>
+        <style>
+            #container
+            {
+                display: flex;
+                flex-wrap: wrap;
+
+                
+            }
+            #container >button{
+                background-color:green;
+                
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+            }
+            button>:hover{
+                background-color: honeydew;
+            }
+            #container>:hover{
+                background-color: black;
+            }
+           
+            
+            
+        </style>
+
+    </head>
+     <marquee behavior=alternate><h1><font color=red><font color=Red>Simple Plugin Browser</font></h1></marquee>
+    <body bgcolor="blue">
+        <div id="container">
+            <button><a href=https://www.google.com/><font color=orange>Google</font> </a></button>
+            <button><a href="https://meet.google.com/"><font color=orange>Google Meet</font></button>
+            <button><a href="https://www.youtube.com/"><font color=orange>youtube</font></a></button>
+            <button><a href="https://mail.google.com/"><font color=orange>Gmail</font></a></button>
+            <button><a href="https://www.google.co.in/maps/"><font color=orange>Google Maps</font></a></button>
+            <button><a href="https://www.hotstar.com/in"><font color=orange>Hotstar</font></a></button>
+            <button><a href="https://www.amazon.com/"><font color=orange>Amazon</font></a></button>
+            <button><a href="https://www.facebook.com/"><font color=orange>FaceBook</font></a></button>
+            <button><a href="https://www.flipkart.com/"><font color=orange>FlipKart</font></a></button>
+            <button><a href="https://web.whatsapp.com/"><font color=orange>whatsapp</font></a></button>
+            <button><a href="https://www.instagram.com/"><font color=orange>Instagram</font></a></button>
+            <button><a href="https://www.jiomart.com/"><font color=orange>jiomart</font></a></button>
+        </div>
 
 
-}
-</script>
-<style>
-  @media (min-width: 600px){
-     body{
-       background-color: orange;
-     }
-  }
-  @media (max-width: 800px){
-     body{
-       background-color:green;
-     }
-  }
+        edit by:-Suraj kumar Sahoo<br>
+        facebook id:-Rcb -Suraj<br>
+        instagram id:-suraj kumar sahoo
+    </body>
 
-
-    
-</style>
-</head>
-<body bgcolor=cyan>
-  <h1>This my first webpage</h1>
-<pre>
-<form name=f1>
-<input type=text name=t1 placeholder=1st no. size=10>
-
-
-<input type=text name=t2 placeholder=2nd no. size=10>
-
-<input type=Button name=b1 value=add onclick=sum(f1.t1.value,f1.t2.value)>
-</form>
-</pre>
-</body>
 </html>
